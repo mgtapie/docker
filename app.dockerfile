@@ -1,4 +1,2 @@
-FROM centos:7.8.2003
-RUN yum -y update && yum -y install httpd
-EXPOSE 80
-ENTRYPOINT ["/usr/sbin/httpd","-D","FOREGROUND"]
+FROM http-prueba:v1
+#arreglar, aca hay que hacer un copy de un archivo "hola mundo"

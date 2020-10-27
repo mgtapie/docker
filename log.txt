@@ -1,0 +1,96 @@
+    1  sudo yum install -y mysql
+    2  clear
+    3  mysql -h pruebadb.cmas9euokeuv.us-east-1.rds.amazonaws.com -u admin -p
+    4  ls
+    5  pwd
+    6  sudo su
+    7  ls
+    8  pwd
+    9  docker images
+   10  sudo su
+   11  sudo systemctl start docker
+   12  sudo systemctl status docker
+   13  ls
+   14  cd docker
+   15  git pull
+   16  sudo git pull
+   17  cat dockerfile 
+   18  clear
+   19  git pull
+   20  sudo git pull
+   21  cat dockerfile
+   22  sudo docker build -t ECS-centos dockerfile
+   23  sudo docker build -t ecs-centos dockerfile
+   24  sudo docker build -t ecs-centos .
+   25  docker ps
+   26  sudo docker ps
+   27  sudo docker images
+   28  sudo git push ecs-centos 013758224089.dkr.ecr.us-east-1.amazonaws.com/repo-ecs
+   29  sudo docker tag  cdbe75fbe4a7 013758224089.dkr.ecr.us-east-1.amazonaws.com/repo-ecs
+   30  sudo docker push 013758224089.dkr.ecr.us-east-1.amazonaws.com/repo-ecs
+   31  sudo yum install -y aws-cli
+   32  sudo yum search
+   33  sudo yum search aws
+   34  clear
+   35  docker run --rm -it amazon/aws-cli aws configure
+   36  sudo docker run --rm -it amazon/aws-cli aws configure
+   37  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   38  sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   39  sudo unzip awscliv2.zip
+   40  unzip awscliv2.zip
+   41  pwd
+   42  ls
+   43  sudo mv awscliv2.zip /home/centos
+   44  cd ..
+   45  unzip awscliv2.zip 
+   46  sudo unzip awscliv2.zip
+   47  sudo yum install unzip
+   48  sudo unzip awscliv2.zip
+   49  clear
+   50  sudo ./aws/install
+   51  sudo aws configure
+   52  sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+   53  sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin -u
+   54  sudo aws
+   55  cd /usr/local/bin/aws
+   56  cd /usr/local/bin
+   57  ls
+   58  cd aws
+   59  sudo ln -s /usr/local/bin /usr/local/bin/aws
+   60  sudo export
+   61  sudo yum install export
+   62  sudo env
+   63  sudo ln -s /usr/bin/aws /usr/local/bin/aws
+   64  sudo ln -s /usr/local/bin/aws /usr/bin/aws
+   65  aws
+   66  aws configure
+   67  aws configure set aws_session_token "FwoGZXIvYXdzEMH//////////wEaDCh/qZOi3FR8Dofy+iLIAQMw2ouGoDnPTk7hvUzVioQ8ZB+X9KGNbenU8yhfPOVYtSMb6TOoGah4/6QfsbONnaZWPjpGeDjeIcuvJ5cLj3AmJQ9h8PEToygpCaqKV11uKjABsuAYh4b4sD48qgjqggfpc1clXiABLF7z5SStum7FwtGYb4T9todjFODPrPwBGHbVjaP9ZAFTN1nAtAmPIxHeTVybVNOXiDSKcYWqSRheOX+kF5RWrmYHV9pntF3T2Z4U73Ijh6hinxuG3BiKPh2GIgkRvig+KLzA3fwFMi3wqm4YfWvDUwFORs5rZUShK8IpHWx4jlIFmHzKNkTuEUX8Vlq35TZXxQ8u78Y="
+   68  cd /home/centos/docker
+   69  clear
+   70  docker images
+   71  sudo docker images
+   72  clear
+   73  sudo aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 013758224089.dkr.ecr.us-east-1.amazonaws.com
+   74  aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 013758224089.dkr.ecr.us-east-1.amazonaws.com
+   75  aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 013758224089.dkr.ecr.us-east-1.amazonaws.com
+   76  docker version
+   77  aws ecr get-login-password --region us-east-1
+   78  sudo docker login --username AWS  013758224089.dkr.ecr.us-east-1.amazonaws.com
+   79  okenPipeError: [Errno 32] Broken pipe
+   80  [centos@ip-172-31-82-114 docker]$ aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 013758224089.dkr.ecr.us-east-1.amazonaws.com
+   81  unknown flag: --password-stdin
+   82  See 'docker login --help'.
+   83  Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+   84  sudo docker login --username AWS 013758224089.dkr.ecr.us-east-1.amazonaws.com
+   85  docker images
+   86  sudo docker images
+   87  sudo docker push 013758224089.dkr.ecr.us-east-1.amazonaws.com/repo-ecs:latest
+   88  clear
+   89  sudo history > log.txt
+   90  sudo history > archivo
+   91  sudo cat history > log.txt
+   92  history > log.txt
+   93  ls -ltha
+   94  cd
+   95  pwd
+   96  history > log.txt

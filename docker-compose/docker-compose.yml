@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+    wordpress:
+        image: php:7.2-apache
+        ports:
+            - 80:80
+            
+        environment:
+            WORDPRESS_DB_HOST: mysql
+            WORDPRESS_DB_USER: root
+            WORDPRESS_DB_PASSWORD: root
+            WORDPRESS_DB_NAME: wordpress
+        links:
+            - mysql       #vinculacion de wordpress con el contenedor con mysql
+        volumes:
+            - C:\\Users/Martin/simple-ecomme:/var/www/html
+                
+    mysql:
+        image: mysql:8.0.13
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_DATABASE: wordpress
+            MYSQL_ROOT_PASSWORD: root
+        volumes:
+            - C:\\Users/Martin/docker/docker-compose/mysql-data:/var/lib/mysql    #origen:destino

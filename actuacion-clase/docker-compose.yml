@@ -1,22 +1,9 @@
 version: '3.1'
 
 services:
-    actuacion-clase2:
-      image: centos:7.9.2009
-      command:
-        - /bin/bash
-        - -c
-        - |
-          yum -y update
-          yum -y install httpd
-          systemctl start httpd
-          systemctl enable httpd
-
-
+    actuacion-clase:
+      image: httpd:2.4
       ports: 
-        - 8081:80
-
+        - 8080:80
       volumes:
-        - C:\\Users\Martin\docker\actuacion-clase\website:/var/www/html
-      
-      
+        - C:\\Users\Martin\docker\actuacion-clase\website:/usr/local/apache2/htdocs/

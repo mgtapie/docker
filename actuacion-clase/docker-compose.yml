@@ -1,8 +1,11 @@
 version: '3.1'
 
 services:
-    web:
+    actuacion-clase:
       image: httpd:2.4
       ports: 
-          - 80:80
+        - 8080:80
+      volumes:
+        - C:\\Users\Martin\docker\actuacion-clase\website:/usr/local/apache2/htdocs/
+      
       

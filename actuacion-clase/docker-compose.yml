@@ -9,9 +9,9 @@ services:
         - |
           yum -y update
           yum -y install httpd
-        # firewall-cmd --permanent --add-service=http
-        #  firewall-cmd --reload
-        #  systemctl start httpd
+          systemctl start httpd
+          systemctl enable httpd
+
 
       ports: 
         - 8081:80

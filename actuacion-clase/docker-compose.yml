@@ -1,11 +1,22 @@
 version: '3.1'
 
 services:
-    actuacion-clase:
-      image: httpd:2.4
+    actuacion-clase2:
+      image: centos:7.9.2009
+      command:
+        - /bin/bash
+        - -c
+        - |
+          yum -y update
+          yum -y install httpd
+        # firewall-cmd --permanent --add-service=http
+        #  firewall-cmd --reload
+        #  systemctl start httpd
+
       ports: 
-        - 8080:80
+        - 8081:80
+
       volumes:
-        - C:\\Users\Martin\docker\actuacion-clase\website:/usr/local/apache2/htdocs/
+        - C:\\Users\Martin\docker\actuacion-clase\website:/var/www/html
       
       
